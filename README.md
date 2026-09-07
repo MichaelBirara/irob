@@ -25,7 +25,6 @@ Irob provides native bidirectional reading and writing for:
    pip install -e .
 3. Ensure dependencies (FastAPI, SQLAlchemy, openpyxl, pandas, pyyaml, etc.) are installed.
 
-
 💻 CLI Usage
 ​Irob is accessible globally via the irob command.
 
@@ -34,16 +33,19 @@ Irob provides native bidirectional reading and writing for:
        ```bash
 irob convert data/legacy_users.csv reports/output.json
 irob convert sqlite:///test_environment.db reports/qa_report.xlsx
+```
 
 2. Automated Batch Pipelines
 ​Execute complex multi-step data pipelines using a YAML configuration file:
          ```bash
 irob batch ci_migration_pipeline.yaml
+```
 
 3. Start the REST API Gateway
 ​Launch the Uvicorn-backed FastAPI server:
          ```bash
 irob server --host 127.0.0.1 --port 8000
+```
 
 🌐 API Gateway & Microservice Integration
 
@@ -76,6 +78,7 @@ conversion = requests.post(
     }
 )
 print("Conversion Status:", conversion.json())
+```
 
 📋 Batch Pipeline Configuration Example (ci_migration_pipeline.yaml)
              ```bash
@@ -99,6 +102,7 @@ tasks:
     to: "reports/qa_audit_export.xlsx"
     source_type: "sql"
     target_type: "excel"
+```
 
 🛡️ License & Architecture
 
