@@ -51,13 +51,14 @@ irob server --host 127.0.0.1 --port 8000
 🌐 API Gateway & Microservice Integration
 
 ​When the server is running, applications can consume Irob dynamically over HTTP.
-
+  ```bash
 - Interactive Docs (Swagger UI):     
   http://127.0.0.1:8000/docs
 - ​Health Check Endpoint: GET /health
 - ​Schema Inspection Endpoint: POST /inspect
 - ​On-the-fly Conversion Endpoint: POST /
   convert
+  ```
 
 Example Python Client Integration (client_example.py)
  ```bash
