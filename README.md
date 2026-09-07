@@ -23,6 +23,7 @@ Irob provides native bidirectional reading and writing for:
 2. Perform an editable global installation:
       ```bash
    pip install -e .
+
 3. Ensure dependencies (FastAPI, SQLAlchemy, openpyxl, pandas, pyyaml, etc.) are installed.
 
 💻 CLI Usage
@@ -82,7 +83,7 @@ print("Conversion Status:", conversion.json())
 
 📋 Batch Pipeline Configuration Example (ci_migration_pipeline.yaml)
 
-             ```
+             ```bash
 name: "Irob Enterprise CI/CD Automated Migration Pipeline"
 
 tasks:
