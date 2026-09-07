@@ -39,9 +39,9 @@ irob convert sqlite:///test_environment.db reports/qa_report.xlsx
 
 2. Automated Batch Pipelines
 ​Execute complex multi-step data pipelines using a YAML configuration file:
-
-         ```bash
+  ```bash
 irob batch ci_migration_pipeline.yaml
+  ```
 
 3. Start the REST API Gateway
 ​Launch the Uvicorn-backed FastAPI server:
