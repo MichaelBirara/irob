@@ -81,8 +81,12 @@ print("Conversion Status:", conversion.json())
 ```
 
 📋 Batch Pipeline Configuration Example (ci_migration_pipeline.yaml)
+
              ```bash
 name: "Irob Enterprise CI/CD Automated Migration Pipeline"
+
+tasks:
+name: "Irob Enterprise CI/CD Automated Multi-System Migration Pipeline"
 
 tasks:
   - name: "Seed Local Test Database from Legacy CSV"
@@ -91,17 +95,24 @@ tasks:
     source_type: "csv"
     target_type: "sql"
 
-  - name: "Migrate Test Schema to Staging Engine"
+  - name: "Migrate Test Schema to Enterprise Oracle Database"
     source: "sqlite:///test_environment.db"
-    to: "sqlite:///staging_db.db"
+    to: "oracle+cx_oracle://hr:password@localhost:1521/ORCL"
     source_type: "sql"
     target_type: "sql"
 
-  - name: "Export Staging Audit Trail to Excel for QA Review"
-    source: "sqlite:///staging_db.db"
-    to: "reports/qa_audit_export.xlsx"
+  - name: "Archive Staging Records to MongoDB Document Store"
+    source: "sqlite:///test_environment.db"
+    to: "mongodb://localhost:27017/enterprise_archive"
+    source_type: "sql"
+    target_type: "mongodb"
+
+  - name: "Export Comprehensive Audit Trail to Excel for QA Review"
+    source: "sqlite:///test_environment.db"
+    to: "reports/enterprise_qa_audit_export.xlsx"
     source_type: "sql"
     target_type: "excel"
+
 ```
 
 🛡️ License & Architecture
