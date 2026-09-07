@@ -60,7 +60,7 @@ irob server --host 127.0.0.1 --port 8000
   convert
 
 Example Python Client Integration (client_example.py)
-           ```bash
+ ```bash
 import requests
 
 # 1. Inspect a legacy database or source schema
@@ -79,7 +79,7 @@ conversion = requests.post(
     }
 )
 print("Conversion Status:", conversion.json())
-```
+  ```
 
 📋 Batch Pipeline Configuration Example (ci_migration_pipeline.yaml)
 
