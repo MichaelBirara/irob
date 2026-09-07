@@ -36,7 +36,6 @@ irob convert data/legacy_users.csv reports/output.json
 irob convert sqlite:///test_environment.db reports/qa_report.xlsx
   ```
 
-
 2. Automated Batch Pipelines
 ​Execute complex multi-step data pipelines using a YAML configuration file:
   ```bash
@@ -45,8 +44,9 @@ irob batch ci_migration_pipeline.yaml
 
 3. Start the REST API Gateway
 ​Launch the Uvicorn-backed FastAPI server:
-         ```bash
+  ```bash
 irob server --host 127.0.0.1 --port 8000
+  ```
 
 🌐 API Gateway & Microservice Integration
 
