@@ -34,7 +34,6 @@ Irob provides native bidirectional reading and writing for:
        ```bash
 irob convert data/legacy_users.csv reports/output.json
 irob convert sqlite:///test_environment.db reports/qa_report.xlsx
-```
 
 2. Automated Batch Pipelines
 ​Execute complex multi-step data pipelines using a YAML configuration file:
