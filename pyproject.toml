@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=61.0.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "irob"
+version = "1.0.0"
+description = "Universal Database & File Conversion Engine and Interpreter Gateway"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "openpyxl>=3.0.0",
+    "xlrd>=2.0.0",
+    "access-parser>=0.0.6",
+    "SQLAlchemy>=2.0.0",
+    "PyYAML>=6.0.0",
+    "fastapi>=0.100.0",
+    "uvicorn>=0.20.0",
+    "pydantic>=2.0.0"
+]
+
+[project.scripts]
+irob = "main:main"
+
+[tool.setuptools]
+packages = ["readers", "writers"]
+py-modules = ["main", "server"]

@@ -1,0 +1,22 @@
+# Python / Environment
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.env
+
+# Package Build / Eggs
+*.egg-info/
+dist/
+build/
+
+# Local Databases & Runtime Artifacts
+*.db
+*.sqlite
+*.sqlite3
+reports/
+
+# IDE / System
+.vscode/
+.idea/
+.DS_Store

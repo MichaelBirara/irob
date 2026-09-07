@@ -1,0 +1,8 @@
+tasks:
+  - name: "Step 1: Convert Sample CSV to JSON"
+    source: "sample.csv"
+    to: "output.json"
+
+  - name: "Step 2: Convert Sample CSV to SQLite Database"
+    source: "sample.csv"
+    to: "sqlite:///irob_migration.db"
