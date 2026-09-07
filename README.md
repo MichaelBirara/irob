@@ -112,7 +112,6 @@ tasks:
     to: "reports/enterprise_qa_audit_export.xlsx"
     source_type: "sql"
     target_type: "excel"
-
 ```
 
 🛡️ License & Architecture
