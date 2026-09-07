@@ -82,8 +82,7 @@ print("Conversion Status:", conversion.json())
   ```
 
 📋 Batch Pipeline Configuration Example (ci_migration_pipeline.yaml)
-
-             ```bash
+ ```bash
 name: "Irob Enterprise CI/CD Automated Migration Pipeline"
 
 tasks:
@@ -113,7 +112,7 @@ tasks:
     to: "reports/enterprise_qa_audit_export.xlsx"
     source_type: "sql"
     target_type: "excel"
-```
+  ```
 
 🛡️ License & Architecture
 
