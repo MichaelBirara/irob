@@ -86,7 +86,6 @@ print("Conversion Status:", conversion.json())
 📋 Batch Pipeline Configuration Example (ci_migration_pipeline.yaml)
  ```bash
 
-tasks:
 name: "Irob Enterprise CI/CD Automated Multi-System Migration Pipeline"
 
 tasks:
