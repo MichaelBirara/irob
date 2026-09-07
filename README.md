@@ -52,8 +52,8 @@ irob server --host 127.0.0.1 --port 8000
 
 ​When the server is running, applications can consume Irob dynamically over HTTP.
   ```bash
-. Interactive Docs (Swagger UI):     
-   http://127.0.0.1:8000/docs
+* ** Interactive Docs (Swagger UI):     
+   http://127.0.0.1:8000/docs 
 
 . ​Health Check Endpoint: GET /health
 
